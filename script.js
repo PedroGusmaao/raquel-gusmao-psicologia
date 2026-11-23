@@ -1,21 +1,24 @@
 // =========================================================
 // 1. FAQ INTERATIVO (ACCORDION) COM DOM MANIPULATION
 // =========================================================
-const botoesFaq = document.querySelectorAll(".faq-pergunta");
+// =========================================================
+// FAQ INTERATIVO (ACCORDION)
+// =========================================================
+const perguntasFaq = document.querySelectorAll(".faq-pergunta");
 
-botoesFaq.forEach((botao) => {
+perguntasFaq.forEach((botao) => {
     botao.addEventListener("click", () => {
-        const itemAtual = botao.parentElement;
-        
-        // Fecha outros itens para deixar apenas um aberto por vez (UX limpa)
+        const itemPai = botao.closest(".faq-item");
+
+        // Fecha todos os outros itens
         document.querySelectorAll(".faq-item").forEach((item) => {
-            if (item !== itemAtual) {
+            if (item !== itemPai) {
                 item.classList.remove("ativo");
             }
         });
 
-        // Alterna o estado do item clicado
-        itemAtual.classList.toggle("ativo");
+        // Abre ou fecha o item clicado
+        itemPai.classList.toggle("ativo");
     });
 });
 

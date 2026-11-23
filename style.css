@@ -383,7 +383,8 @@ h1, h2, h3 {
 
 /* Classe ativa adicionada pelo JavaScript */
 .faq-item.ativo .faq-resposta {
-    max-height: 200px;
+    max-height: 300px; /* Garante espaço suficiente para o texto */
+    padding: 15px 25px;
 }
 
 .faq-item.ativo .seta {
