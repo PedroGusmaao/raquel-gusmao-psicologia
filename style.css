@@ -1,0 +1,589 @@
+/* ===================================================
+   PALETA DE CORES & VARIÁVEIS
+   Tons Nudes, Areia, Off-White e Azul Sereno Clínico
+=================================================== */
+:root {
+    --azul-profundo: #243b53;   /* Azul sóbrio para títulos e botões */
+    --azul-sereno: #486581;      /* Azul intermediário elegante */
+    --azul-claro: #bcccdc;       /* Detalhes suaves */
+    --nude-fundo: #f8f6f2;       /* Fundo geral da página (off-white acolhedor) */
+    --nude-card: #ffffff;        /* Fundo limpo para cards */
+    --nude-areia: #ede6dc;       /* Nude mais quente para contrastes */
+    --texto-escuro: #334e68;     /* Cinza/azul escuro confortável para leitura */
+    --texto-suave: #627d98;      /* Textos secundários */
+    --verde-wpp: #25d366;        /* Destaque WhatsApp */
+    --sombra-elegante: 0 10px 30px rgba(36, 59, 83, 0.08);
+}
+
+/* Reset Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--nude-fundo);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* Tipografia */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--azul-profundo);
+    line-height: 1.25;
+}
+
+/* Tags de destaque */
+.tag {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--azul-sereno);
+    background-color: var(--nude-areia);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.tag.centralizada {
+    display: table;
+    margin: 0 auto 15px;
+}
+
+.titulo-secao {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ===================================================
+   CABEÇALHO
+=================================================== */
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(248, 246, 242, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--nude-areia);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-size: 12px;
+    color: var(--texto-suave);
+    display: block;
+}
+
+.menu-navegacao {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: var(--azul-profundo);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: var(--azul-sereno);
+}
+
+.btn-agendar-header {
+    background-color: var(--azul-profundo);
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.2s !important;
+}
+
+.btn-agendar-header:hover {
+    background-color: var(--azul-sereno);
+    transform: translateY(-2px);
+}
+
+/* ===================================================
+   SEÇÃO HERO
+=================================================== */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.hero-conteudo {
+    flex: 1.2;
+}
+
+.subtitulo-hero {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--azul-sereno);
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin: 15px 0 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: var(--texto-suave);
+    margin-bottom: 30px;
+}
+
+.botoes-hero {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-principal {
+    background-color: var(--azul-profundo);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: var(--azul-sereno);
+    box-shadow: 0 6px 20px rgba(36, 59, 83, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-secundario {
+    border: 1px solid var(--azul-profundo);
+    color: var(--azul-profundo);
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background-color: var(--nude-areia);
+}
+
+.hero-imagem {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+}
+
+.moldura-foto {
+    width: 380px;
+    height: 480px;
+    border-radius: 200px 200px 20px 20px; /* Formato de arco clássico moderno */
+    overflow: hidden;
+    box-shadow: var(--sombra-elegante);
+    border: 8px solid var(--nude-areia);
+}
+
+.moldura-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================================================
+   SEÇÃO SOBRE MIM
+=================================================== */
+.sobre {
+    background-color: #ffffff;
+}
+
+.sobre-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.sobre-texto p {
+    font-size: 17px;
+    color: var(--texto-suave);
+    margin-bottom: 20px;
+}
+
+.crp-badge {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: var(--nude-fundo);
+    border: 1px solid var(--azul-claro);
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+.crp-badge span {
+    display: block;
+    font-size: 12px;
+    color: var(--azul-sereno);
+    text-transform: uppercase;
+}
+
+.crp-badge strong {
+    color: var(--azul-profundo);
+    font-size: 16px;
+}
+
+/* ===================================================
+   CARDS DE ATENDIMENTO
+=================================================== */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--nude-card);
+    padding: 35px 25px;
+    border-radius: 16px;
+    border: 1px solid var(--nude-areia);
+    box-shadow: var(--sombra-elegante);
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--azul-claro);
+}
+
+.card .icone {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+/* ===================================================
+   ABORDAGEM SISTÊMICA
+=================================================== */
+.abordagem {
+    background-color: var(--nude-areia);
+}
+
+.conteudo-sistemica {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo-sistemica h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.conteudo-sistemica p {
+    font-size: 16px;
+    color: var(--texto-escuro);
+    margin-bottom: 15px;
+}
+
+/* ===================================================
+   FAQ (ACCORDION VIA JS)
+=================================================== */
+.faq-lista {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid var(--nude-areia);
+    overflow: hidden;
+}
+
+.faq-pergunta {
+    width: 100%;
+    padding: 20px 25px;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--azul-profundo);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-pergunta .seta {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    background-color: #faf8f5;
+    padding: 0 25px;
+}
+
+.faq-resposta p {
+    font-size: 14px;
+    color: var(--texto-suave);
+    padding: 15px 0;
+}
+
+/* Classe ativa adicionada pelo JavaScript */
+.faq-item.ativo .faq-resposta {
+    max-height: 200px;
+}
+
+.faq-item.ativo .seta {
+    transform: rotate(45deg); /* O "+" vira "x" suavemente */
+}
+
+/* ===================================================
+   FORMULÁRIO DE CONTATO (TRIAGEM INTELIGENTE)
+=================================================== */
+.contato {
+    background-color: #ffffff;
+}
+
+.container-contato {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.info-contato {
+    flex: 1;
+}
+
+.info-contato h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.aviso-urgencia {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff4f2;
+    border-left: 4px solid #e0564c;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #8c322b;
+}
+
+.form-triagem {
+    flex: 1;
+    background-color: var(--nude-fundo);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--sombra-elegante);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--azul-profundo);
+}
+
+.campo input, .campo select {
+    padding: 12px 16px;
+    border: 1px solid var(--nude-areia);
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffff;
+    color: var(--texto-escuro);
+    transition: border-color 0.3s;
+}
+
+.campo input:focus, .campo select:focus {
+    border-color: var(--azul-sereno);
+}
+
+.btn-enviar-wpp {
+    margin-top: 10px;
+    background-color: var(--verde-wpp);
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-enviar-wpp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* ===================================================
+   RODAPÉ
+=================================================== */
+.rodape {
+    background-color: var(--azul-profundo);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 13px;
+}
+
+.rodape p {
+    opacity: 0.8;
+}
+
+.credito-dev {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.5 !important;
+}
+
+/* ===================================================
+   RESPONSIVIDADE (CELULAR / MOBILE)
+=================================================== */
+@media (max-width: 820px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .menu-navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .botoes-hero {
+        justify-content: center;
+    }
+
+    .moldura-foto {
+        width: 260px;
+        height: 340px;
+    }
+
+    .container-contato {
+        flex-direction: column;
+    }
+
+    .form-triagem {
+        padding: 25px 20px;
+    }
+}
+
+/* ===================================================
+   CARD DE CONSULTÓRIO PRESENCIAL
+=================================================== */
+.card-consultorio {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: var(--nude-fundo);
+    border: 1px solid var(--nude-areia);
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.icone-mapa {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.card-consultorio strong {
+    color: var(--azul-profundo);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.card-consultorio p {
+    font-size: 13px !important;
+    color: var(--texto-suave);
+    margin-bottom: 6px !important;
+}
+
+.link-maps {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--azul-sereno);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link-maps:hover {
+    color: var(--azul-profundo);
+    text-decoration: underline;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologia Clínica | Psicoterapia de Família e Casal</title>
+
+    <!-- Fontes Google elegantes e acolhedoras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <h2>Raquel Gusmão</h2>
+            <span>Psicóloga Clínica • CRP 04/38234</span>
+        </div>
+        <nav class="menu-navegacao">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#atendimento">Atendimentos</a>
+            <a href="#abordagem">Abordagem</a>
+            <a href="#faq">Dúvidas</a>
+            <a href="#contato" class="btn-agendar-header">Agendar Consulta</a>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO HERO (APRESENTAÇÃO PRINCIPAL) -->
+    <section id="inicio" class="hero">
+        <div class="hero-conteudo">
+            <span class="subtitulo-hero">Cuidado, Acolhimento e Relações Saudáveis</span>
+            <h1>Um espaço seguro para transformar suas relações e seu bem-estar.</h1>
+            <p>Especialista em Psicoterapia de Família e Casal, com atendimento dedicado a crianças, adolescentes e
+                adultos. Cuidado humano nas modalidades presencial e online.</p>
+            <div class="botoes-hero">
+                <a href="#contato" class="btn-principal">Agendar Primeira Sessão</a>
+                <a href="#sobre" class="btn-secundario">Conhecer a Abordagem</a>
+            </div>
+        </div>
+        <div class="hero-imagem">
+            <!-- Coloque a foto dela aqui depois -->
+            <div class="moldura-foto">
+                <img src="img/foto-perfil.jpeg" alt="Foto da Psicóloga" id="fotoPsicologa"
+                    onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM & CRP -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-texto">
+                <span class="tag">Trajetória Profissional</span>
+                <h2>Olá, seja muito bem-vindo(a).</h2>
+                <p>Acredito que ninguém vive isolado: nossas dores, alegrias e desafios são moldados pelas relações que
+                    construímos ao longo da vida.</p>
+                <p>Com registro profissional <strong>CRP 04/38234</strong>, atuo guiada pelo rigor ético e pelo
+                    compromisso de oferecer uma escuta atenta, livre de julgamentos e focada no desenvolvimento da sua
+                    melhor versão e harmonia nos seus vínculos.</p>
+                <div class="crp-badge">
+                    <span>Registro Ativo</span>
+                    <strong>Conselho Regional de Psicologia: CRP 04/38234</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ÁREAS DE ATENDIMENTO -->
+    <section id="atendimento" class="atendimentos">
+        <div class="container">
+            <span class="tag centralizada">Como Posso Te Ajudar</span>
+            <h2 class="titulo-secao">Modalidades de Cuidado</h2>
+
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="icone">👨‍👩‍👧‍👦</div>
+                    <h3>Família e Casal</h3>
+                    <p>Especialidade focada em destravar diálogos, mediar conflitos e restaurar vínculos afetivos
+                        saudáveis.</p>
+                </div>
+                <div class="card">
+                    <div class="icone">🌱</div>
+                    <h3>Crianças e Adolescentes</h3>
+                    <p>Espaço acolhedor e adaptado para lidar com fases de transição, regulação emocional e
+                        desenvolvimento.</p>
+                </div>
+                <div class="card">
+                    <div class="icone">🤍</div>
+                    <h3>Adultos (Individual)</h3>
+                    <p>Autoconhecimento, manejo de ansiedade, sobrecarga e ressignificação de ciclos pessoais.</p>
+                </div>
+                <div class="card">
+                    <div class="icone">🌐</div>
+                    <h3>Presencial & Online</h3>
+                    <p>Flexibilidade para você ser atendido no consultório ou no conforto e privacidade da sua casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ABORDAGEM SISTÊMICA -->
+    <section id="abordagem" class="abordagem">
+        <div class="container container-abordagem">
+            <div class="conteudo-sistemica">
+                <span class="tag">Fundamento Teórico</span>
+                <h2>Por que a Abordagem Sistêmica?</h2>
+                <p>Na Terapia Sistêmica, não olhamos para a pessoa como um indivíduo isolado, mas sim como parte viva de
+                    sistemas fundamentais: família, trabalho, relacionamentos e história de vida.</p>
+                <p>Ao compreender os padrões que se repetem e o papel de cada vínculo, conseguimos destravar nós
+                    emocionais com muito mais profundidade e eficácia duradoura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAQ (PERGUNTAS FREQUENTES - ACCORDION VIA JS) -->
+        <!-- SEÇÃO CONTATO, REDES & LOCALIZAÇÃO DO CONSULTÓRIO -->
+    <section id="contato" class="contato">
+        <div class="container container-contato">
+            <div class="info-contato">
+                <span class="tag">Primeiro Contato</span>
+                <h2>Dê o primeiro passo para o seu cuidado.</h2>
+                <p>Preencha os dados ao lado para enviar uma mensagem formatada e agendar o seu melhor horário via WhatsApp.</p>
+                
+                <!-- REDES SOCIAIS OFICIAIS -->
+                <div class="redes-sociais">
+                    <p class="titulo-redes">Acompanhe nas Redes:</p>
+                    <div class="links-redes">
+                        <a href="https://www.instagram.com/raquelgfpsicologa/" target="_blank" class="btn-rede instagram">
+                            📷 @raquelgfpsicologa
+                        </a>
+                        <a href="https://wa.me/5531998434893" target="_blank" class="btn-rede whatsapp">
+                            💬 (31) 99843-4893
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD DO CONSULTÓRIO PRESENCIAL COM GOOGLE MAPS -->
+                <div class="card-consultorio">
+                    <div class="icone-mapa">📍</div>
+                    <div>
+                        <strong>Consultório Presencial:</strong>
+                        <p>Rua Norberto Mayer, 626 - Eldorado, Contagem - MG</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Norberto+Mayer,+626+-+Eldorado,+Contagem+-+MG" target="_blank" class="link-maps">
+                            Ver rota no Google Maps →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="aviso-urgencia">
+                    <p>⚠️ <em>Em situações de crise emocional severa, entre em contato imediatamente com o CVV pelo número 188 ou procure uma unidade de emergência.</em></p>
+                </div>
+            </div>
+
+            <!-- FORMULÁRIO DE TRIAGEM RÁPIDA -->
+            <form id="formTriagem" class="form-triagem">
+                <div class="campo">
+                    <label for="nome">Seu Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Ex: Maria Silva" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipoAtendimento">Modalidade de Atendimento:</label>
+                    <select id="tipoAtendimento" required>
+                        <option value="Terapia de Casal">Terapia de Casal</option>
+                        <option value="Terapia de Família">Terapia de Família</option>
+                        <option value="Atendimento para Crianças/Adolescentes">Crianças / Adolescentes</option>
+                        <option value="Terapia Individual Adulto">Individual (Adulto)</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="formato">Preferência de Formato:</label>
+                    <select id="formato" required>
+                        <option value="Presencial (Consultório em Contagem)">Presencial (Consultório em Contagem)</option>
+                        <option value="Online (Videochamada)">Online (Videochamada)</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="periodo">Melhor Período para Sessões:</label>
+                    <select id="periodo">
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-enviar-wpp">💬 Agendar via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>&copy; 2026 Raquel Gusmão • Psicóloga Clínica • CRP 04/38234. Todos os direitos reservados.</p>
+        <p class="credito-dev">Desenvolvido com carinho por Pedro Gusmão</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
